@@ -5,6 +5,8 @@
   --dark-red: #680524;
   --black: #00243a;
   --white: #fff;
+  --pink: #ed927d;
+  --pink-dark: #eb666a;
 }
 
 body {
@@ -66,7 +68,7 @@ body {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: red;
+  background: var(--skin);
   position: absolute;
   top: 165px;
   left: 122px;
@@ -110,4 +112,68 @@ body {
   bottom: 0;
   position: absolute;
   border-radius: 0px 13px 0 0;
+}
+
+.ear-left {
+  width: 35px;
+  height: 50px;
+  background: var(--pink);
+  border-radius: 50px 0 0 50px;
+  position: absolute;
+  top: 150px;
+  left: -35px;
+}
+
+.ear-right {
+  width: 35px;
+  height: 50px;
+  background: var(--pink);
+  border-radius: 0 50px 50px 0;
+  position: absolute;
+  top: 150px;
+  right: -35px;
+}
+
+.shell-1 {
+  width: 8px;
+  height: 23px;
+  background: var(--pink-dark);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-75%, -50%) rotate(45deg);
+  border-radius: 30px;
+}
+
+.shell-2 {
+  width: 8px;
+  height: 23px;
+  background: var(--pink-dark);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-75%, -50%) rotate(135deg);
+  border-radius: 30px;
+}
+
+.shell-3 {
+  width: 8px;
+  height: 23px;
+  background: var(--pink-dark);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(75%, -50%) rotate(45deg);
+  border-radius: 30px;
+}
+
+.shell-4 {
+  width: 8px;
+  height: 23px;
+  background: var(--pink-dark);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(75%, -50%) rotate(135deg);
+  border-radius: 30px;
 }

@@ -37,6 +37,7 @@ body {
   left: 60px;
   display: flex;
   justify-content: center;
+  z-index: 10;
 }
 
 .eye-right {
@@ -49,6 +50,7 @@ body {
   right: 60px;
   display: flex;
   justify-content: center;
+  z-index: 10;
 }
 
 .pupil {
@@ -58,4 +60,54 @@ body {
   background: var(--black);
   border-radius: 50%;
   top: 12px;
+}
+
+.nose {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+  top: 165px;
+  left: 122px;
+  transform: translate(-50%, 0);
+  z-index: 5;
+}
+
+.beard {
+  width: 252px;
+  height: 290px;
+  background: var(--black);
+  border-radius: 100px 100px 150px 150px;
+  position: absolute;
+  top: 190px;
+  left: -3px;
+}
+
+.mouth {
+  width: 105px;
+  height: 55px;
+  border-radius: 0 0 50px 50px;
+  background: var(--dark-red);
+  top: 60px;
+  position: absolute;
+  left: 126px;
+  transform: translate(-50%, 0);
+  overflow: hidden;
+}
+
+.teeth {
+  width: 80px;
+  height: 18px;
+  background: var(--white);
+  border-radius: 0 0 12px;
+}
+
+.tongue {
+  width: 52px;
+  height: 26px;
+  background: var(--red);
+  bottom: 0;
+  position: absolute;
+  border-radius: 0px 13px 0 0;
 }

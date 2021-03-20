@@ -6,3 +6,56 @@
   --black: #00243a;
   --white: #fff;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.head {
+  width: 245px;
+  height: 450px;
+  background: var(--skin);
+  border-radius: 140px 140px 150px 150px;
+  position: relative;
+}
+
+.eye-left {
+  width: 70px;
+  height: 50px;
+  background: var(--white);
+  position: absolute;
+  top: 125px;
+  border-radius: 8px 8px 50px 50px;
+  left: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.eye-right {
+  width: 70px;
+  height: 50px;
+  background: var(--white);
+  position: absolute;
+  top: 125px;
+  border-radius: 8px 8px 50px 50px;
+  right: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.pupil {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background: var(--black);
+  border-radius: 50%;
+  top: 12px;
+}
